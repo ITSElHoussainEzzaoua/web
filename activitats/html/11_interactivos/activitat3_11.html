@@ -5,77 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activitat 3</title>
 </head>
-<body>
-    <h1>Perfil propio</h1>
-   
-
 <style>
-    fieldset, label{
-        padding: 25px;
+    nav, a{
+        padding: 40px;
     }
 </style>
+<body>
 
-   <fieldset>
-    <label>
-        Nivel de conocimiento en HTML
-        <meter
-            id="html"
-            min="0"
-            max="100"
-            value="70"
-        >
-            70
-        </meter>
-    </label><br>
-    <label>
-        Conocimiento sobre Photoshop/Gimp
-        <meter
-            id="edit"
-            min="0"
-            max="100"
-            value="90"
-        >
-            90
-        </meter>
-    </label><br>
-    <label>
-        Belleza
-        <meter
-            id="belleza"
-            min="0"
-            max="100"
-            value="70"
-        >
-            70
-        </meter>
-    </label><br>
-    <label>
-        Hambre
-        <meter
-            id="hambre"
-            min="0"
-            max="100"
-            value="50"
-        >
-            50
-        </meter>
-    </label><br>
-    <label>
-        Salud
-        <meter
-            id="salud"
-            min="0"
-            max="100"
-            value="60"
-        >
-            60
-        </meter>
-    </label>
-    <br>
+    <header>
+        <h1>Boton de hambuergesa</h1>
+        <button popovertarget="menu" popovertargetaction="toggle">☰</button>
+    </header>
+    <dialog id="menu" popover>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto </a>
+            <a href="#">Sobre nosotros</a>
+        </nav>
 
-
-
-
-   </fieldset>
+    </dialog>
+    
 </body>
 </html>
