@@ -1,165 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacte</title>
+    <title>Contacte | Portafoli</title>
+    <link rel="stylesheet" href="estils/estils.css">
 </head>
 <body>
-    <style>
-body {
-          font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            background-image: url(fondop.jpg);
-        }
-.capsalera {
-            background-color: #5f9ea0;
-            color: white;
-            text-align: center;
-            padding: 2em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .branding span {
-            color: #007bff;
-        }
-        .branding p {
-            font-size: 1.2em;
-            margin-top: 0.5em;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 1em;
-        }
-        header :hover {
-            transform: scale(1.1);
-        }
-        .nav-links {
-            display: flex;
-            gap: 1em;
-        }
-        nav a {
-            color: #007bff;
-            font-weight: bold;
-            text-decoration: none;
-            cursor: pointer;
-            transition: color 0.3s ease-in-out;
-        }
-        nav a.current-page {
-            background-color: #00ced1;
-            color: white;
-            padding: 0.5em 1em;
-            border-radius: 5px;
-        }
-        .nav-links a:hover {
-            color: #ff69b4;
-        }
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: rgb(239, 162, 255);
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            margin-top: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .paginici {
-            text-align: center;
-            margin: 2em;
-        }
-        .paginici h2 {
-            font-size: 2em;
-            color: #007bff;
-        }
-        .paginici p {
-            font-size: 1.5em;
-            line-height: 1.6em;
-        }
-        .paginici ul {
-            margin: 1em;
-            list-style-type: none;
-            padding: 0;
-        }
-        main:hover {
-            transform: scale(1.2);
-        }
-.informacion-contacto li {
-    margin-bottom: 1em;
-}
-.pagina-contacte {
-    text-align: center;
-    margin: 2em;
-}
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-label {
-    display: block;
-    margin-bottom: 0.5em;
-}
-input,
-textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    box-sizing: border-box;
-}
-button {
-    background-color: aqua;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    cursor: pointer;
-}
-button:hover {
-    background-color: blue;
-}
-
-    </style>
-        <header class="capsalera">
-            <div class="branding">
-                <h1>El meu <span>Portafoli</span></h1>
-            </div>
-            <nav class="nav-links">
-                <a href="portafoli.html" class="current-page">Inici</a>
-                <a href="/web/index.html" class="current-page">Activitats</a>
-                <a href="contacte.html" class="current-page">Contacte</a>
-                <a href="sobremi.html" class="current-page">Sobre mi</a>
-            </nav>
-        </header>
-<main>
-    <article>
-        <div class="pagina-contacte">
-            <h2>Contacte</h2>
-            <form action="#" method="post">
-                <ul class="informacion-contacto">
-                    <li>Numero: 96690293</li>
-                </ul>
-                <ul>
-                    <h3>Enviame un mensaje</h3>
-                    <label for="nom">Nom:</label>
-                    <input type="text">
-
-                    <label >Email:</label>
-                    <input type="text" >
-
-                    <label for="missatge">Missatge:</label>
-                    <textarea rows="4" ></textarea>
-
-                    <button type="submit">Enviar</button>
-                </ul>
-            </form>
+    
+    <header class="capsalera">
+        <div class="branding">
+            <h1>El meu <span>Portafoli</span></h1>
+            <p>Desenvolupament d'Aplicacions Web</p>
         </div>
-    </article>
-</main>
+        <nav class="nav-links">
+            <a href="/web/index.html">Inici</a>
+            <a href="activitats.html">Activitats HTML & CSS</a>
+            <a href="sobremi.html">Sobre mi</a>
+            <a href="contacte.html" class="current-page">Contacte</a>
+            <a href="esbossos.html">Esbossos</a>
+        </nav>
+    </header>
 
+    <main>
+        <article class="pagina-contacte">
+            <h2>Contacte</h2>
+            <p>Pots posar-te en contacte amb mi a través del següent formulari o trucant al <strong>638261844</strong> / <strong>602815423</strong>.</p>
+            
+            <h3>Horari de disponibilitat</h3>
+            <table>
+                <tr>
+                    <th>Dia</th>
+                    <th>Matí</th>
+                    <th>Tarda</th>
+                </tr>
+                <tr>
+                    <td>Dilluns a Divendres</td>
+                    <td>No disponible (Classes de DAW)</td>
+                    <td>15:00 - 21:00</td>
+                </tr>
+                <tr>
+                    <td>Cap de setmana</td>
+                    <td>10:00 - 14:00</td>
+                    <td>Lliure</td>
+                </tr>
+            </table>
+
+            <h3>Envia'm un missatge</h3>
+            <form action="#" method="post">
+                <div>
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="missatge">Missatge:</label>
+                    <textarea id="missatge" name="missatge" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy;El Houssain Ezzaoua. Tots els drets reservats.</p>
+        <div style="margin-top: 1em;">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="mailto:hezzaoua@gmail.com">Correu 1</a>
+            <a href="mailto:eezzaoua@gmail.com">Correu 2</a>
+            <a href="mailto:houssainodaxiigame@gmail.com">Correu 3</a>
+        </div>
+    </footer>
 
 </body>
 </html>

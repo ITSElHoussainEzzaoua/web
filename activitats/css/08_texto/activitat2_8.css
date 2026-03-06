@@ -1,0 +1,23 @@
+h1 {
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2rem;    
+}
+h2 {
+    font-size: larger;
+    font-style: unset;
+    font-weight: 900;
+    letter-spacing: 1rem;
+}
+h3 {
+    font-size: medium;
+    font-style: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p {
+    font-size: small;
+    font-style: oblique;
+    text-align: justify;
+}
