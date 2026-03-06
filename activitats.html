@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esbossos | Portafoli</title>
+    <title>Activitats | Portafoli</title>
     <link rel="stylesheet" href="estils/estils.css">
 </head>
 <body>
+    
     <header class="capsalera">
         <div class="branding">
             <h1>El meu <span>Portafoli</span></h1>
             <p>Desenvolupament d'Aplicacions Web</p>
         </div>
         <nav class="nav-links">
-            <a href="/web/index.html">Inici</a>
-            <a href="activitats.html">Activitats HTML & CSS</a>
+            <a href="index.html">Inici</a>
+            <a href="activitats.html" class="current-page">Activitats HTML & CSS</a>
             <a href="sobremi.html">Sobre mi</a>
             <a href="contacte.html">Contacte</a>
-            <a href="esbossos.html" class="current-page">Esbossos</a>
+            <a href="esbossos.html">Esbossos</a>
         </nav>
     </header>
 
-    <main class="pagina-esbossos">
-        <h2>Wireframes i Esbossos</h2>
-        <p>A continuació pots veure l'esbós inicial (wireframe) que vaig dissenyar per planificar l'estructura d'aquest portafoli abans de programar-lo.</p>
+    <main class="menu-activitats">
+        <h2>Menú d'Activitats</h2>
+        <p>Selecciona quina categoria d'activitats del curs vols explorar:</p>
         
-        <img src="imatges/esbos.jpeg" alt="Esbós de la web" class="imatge-esbos">
-        
-        <br><br>
-        <a href="imatges/esbos.jpeg" download>
-            <button>Descarregar Esbós</button>
-        </a>
+        <div class="contenidor-botons">
+            <a href="activitatshtml.html">
+                <button class="boto-gran">📑 Entrar en activitats HTML</button>
+            </a>
+            
+            <a href="activitatscss.html">
+                <button class="boto-gran">🎨 Entrar en activitats CSS</button>
+            </a>
+        </div>
     </main>
 
     <footer>
@@ -44,5 +48,6 @@
             <a href="mailto:houssainodaxiigame@gmail.com">Correu 3</a>
         </div>
     </footer>
+
 </body>
 </html>
